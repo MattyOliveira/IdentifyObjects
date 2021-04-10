@@ -25,6 +25,9 @@ implementation 'com.github.mattyoliveira:identify-objects:1.0.0'
 class ExempleActivity : AppCompatActivity() {
 
     private var classifier: Classifier? = null
+    
+    private var modelPath = "model_unquant.tflite"
+    private var labelPath = "labels.txt"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
